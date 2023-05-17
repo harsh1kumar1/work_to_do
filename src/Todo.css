@@ -1,0 +1,135 @@
+h1{
+
+    margin-bottom:23px;
+    padding-left:20px;
+}
+.image{
+	width: 37px;
+	padding-bottom: 10px;
+	
+}
+.main__div{
+    margin-top: 20px;
+    /* margin: 17px 298px -2px 305px; */
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbd46d;
+    background-image: linear-gradient(to right, #fbd46d, #0072ff);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.input__holder{
+    font-family: 'Delicious Handrawn', cursive;
+    padding: 8px;
+    border-radius: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.__list{
+        display: flex;
+        flex-direction: column;
+        font-family:'Delicious Handrawn', cursive;
+       padding-right: 15px;
+       font-size: large;
+       padding: 10px;
+}
+
+
+
+body {
+	height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	background-image: linear-gradient(147deg, #7f10f6 0%, #a5e426 74%);
+}
+.button1 {
+	--border-radius: 24px;
+	--border-width: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 15px;
+	appearance: none;
+	position: relative;
+	padding: 1em 2em;
+	border: 0;
+	background-color: transparent;
+	font-weight: 600;
+	color: #fff;
+}
+
+.button1::after {
+	--m-i: linear-gradient(#000, #000);
+	--m-o: content-box, padding-box;
+
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: var(--border-width);
+	border-radius: var(--border-radius);
+	background-image: conic-gradient(
+		#488cfb,
+		#29dbbc,
+		#ddf505,
+		#ff9f0e,
+		#e440bb,
+		#655adc,
+		#488cfb
+	);
+
+	mask-image: var(--m-i), var(--m-i);
+	mask-origin: var(--m-o);
+	mask-clip: var(--m-o);
+	mask-composite: exclude;
+	-webkit-mask-composite: destination-out;
+
+	filter: hue-rotate(0);
+	animation: hue linear 500ms infinite;
+	animation-play-state: paused;
+}
+
+.button1:hover::after {
+	animation-play-state: running;
+}
+
+@keyframes hue {
+	to {
+		filter: hue-rotate(1turn);
+	}
+}
+
+/* to have things in good shape */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
